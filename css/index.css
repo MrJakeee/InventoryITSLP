@@ -1,0 +1,119 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo principal */
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    background-color: #5e002b; /* vino oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor general */
+.login-container {
+    position: relative;
+    background-color: #f4f0eb; /* color crema */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Barras superior e inferior */
+.login-container::before,
+.login-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #5e002b;
+    z-index: 0;
+}
+
+.login-container::before {
+    top: 0;
+}
+
+.login-container::after {
+    bottom: 0;
+}
+
+/* Caja del formulario */
+.login-box {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* Título */
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column; /* 🔹 Acomoda los inputs uno sobre otro */
+    align-items: center;
+    gap: 15px; /* Espacio entre los campos */
+}
+
+/* Campos de texto */
+input[type="text"],
+input[type="password"] {
+    width: 350px;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: white;
+    background-color: #5e002b;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+}
+
+/* Botón */
+button {
+    margin-top: 20px;
+    padding: 12px 40px;
+    background-color: #5e002b;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a003a;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    input[type="text"],
+    input[type="password"] {
+        width: 80%;
+    }
+}
