@@ -3,7 +3,6 @@
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 Sistema de gestión de inventarios desarrollado para el **Instituto Tecnológico de San Luis Potosí**. Esta aplicación permite administrar de manera eficiente los recursos institucionales mediante una arquitectura robusta y una interfaz intuitiva.
 
@@ -37,4 +36,17 @@ Sigue estos pasos para montar el proyecto en tu entorno local:
 
 ### 2. Clonación
 ```bash
-git clone [https://github.com/MrJakeee/InventoryITSLP.git](https://github.com/MrJakeee/InventoryITSLP.git)
+git clone https://github.com/MrJakeee/InventoryITSLP.git
+```
+
+##3. Base de Datos
+  1. Inicia phpMyAdmin.
+  
+  2. Crea una nueva base de datos llamada inventory_itslp.
+  
+  3. Importa el archivo SQL que se encuentra en el directorio del proyecto.
+  
+  4. Configura la conexión en modelos/conexion.php con tus credenciales locales.
+
+Autor
+Manuel Montoya - Desarrollo Integral - @MrJakeee
