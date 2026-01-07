@@ -1,63 +1,40 @@
-InventoryITSLP - Sistema de Gestión de Inventario
-Sistema web desarrollado para el control y administración de inventarios del Instituto Tecnológico de San Luis Potosí. Este proyecto utiliza una arquitectura MVC (Modelo-Vista-Controlador) para garantizar un código organizado y escalable.
+# 📦 InventoryITSLP
 
-🚀 Características
-Autenticación segura: Sistema de login para administradores y personal autorizado.
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-Gestión de Artículos: Registro, edición, baja y consulta de bienes.
+Sistema de gestión de inventarios desarrollado para el **Instituto Tecnológico de San Luis Potosí**. Esta aplicación permite administrar de manera eficiente los recursos institucionales mediante una arquitectura robusta y una interfaz intuitiva.
 
-Interfaz Dinámica: Uso de AJAX para actualizaciones de datos sin recargar la página.
+---
 
-Diseño Responsivo: Adaptable a diferentes dispositivos.
+## ✨ Características Principales
 
-🛠️ Tecnologías Utilizadas
-Lenguaje: PHP 7.x / 8.x
+* **Módulo de Seguridad:** Autenticación de usuarios con diferentes niveles de acceso.
+* **Gestión de Inventario (CRUD):** Registro, consulta, actualización y eliminación de artículos.
+* **Consultas Asíncronas:** Implementación de **AJAX** para una experiencia de usuario fluida sin recargas de página.
+* **Arquitectura MVC:** Separación clara entre la lógica de negocio, los datos y la interfaz.
 
-Base de Datos: MySQL
+## 📂 Estructura del Directorio
 
-Frontend: HTML5, CSS3 (Bootstrap), JavaScript (jQuery)
+| Carpeta / Archivo | Descripción |
+| :--- | :--- |
+| `ajax/` | Controladores para peticiones asíncronas de JavaScript. |
+| `controladores/` | Lógica de control que conecta los modelos con las vistas. |
+| `modelos/` | Gestión de la base de datos y consultas SQL. |
+| `vistas/` | Archivos HTML, CSS y recursos visuales del sistema. |
+| `index.php` | Punto de acceso principal a la aplicación. |
 
-Arquitectura: MVC (Modelo-Vista-Controlador)
+## 🛠️ Instalación y Configuración
 
-📋 Requisitos Previos
-Para ejecutar este proyecto localmente, necesitarás un entorno de servidor local como:
+Sigue estos pasos para montar el proyecto en tu entorno local:
 
-XAMPP o Laragon.
+### 1. Requisitos
+* Servidor local (XAMPP, Laragon o WAMP).
+* PHP versión 7.4 o superior.
+* Gestor de base de datos MySQL.
 
-PHP >= 7.4
-
-MySQL/MariaDB
-
-🔧 Instalación
-Clonar el repositorio:
-
-Bash
-
-git clone https://github.com/MrJakeee/InventoryITSLP.git
-Configurar la Base de Datos:
-
-Crea una base de datos en tu gestor (phpMyAdmin).
-
-Importa el archivo .sql (si se encuentra en la carpeta de modelos o raíz).
-
-Configura las credenciales de conexión en el archivo correspondiente (usualmente en la carpeta modelos/conexion.php).
-
-Despliegue:
-
-Mueve la carpeta del proyecto a htdocs (XAMPP) o www (WAMP).
-
-Accede desde tu navegador a http://localhost/InventoryITSLP.
-
-📂 Estructura del Proyecto
-/ajax: Procesamiento de peticiones asíncronas.
-
-/controladores: Lógica de la aplicación.
-
-/modelos: Conexión a BD y consultas.
-
-/vistas: Interfaz de usuario y recursos (CSS/JS).
-
-index.php: Punto de entrada principal.
-
-✒️ Autores
-Jake - Desarrollo Inicial - MrJakeee
+### 2. Clonación
+```bash
+git clone [https://github.com/MrJakeee/InventoryITSLP.git](https://github.com/MrJakeee/InventoryITSLP.git)
